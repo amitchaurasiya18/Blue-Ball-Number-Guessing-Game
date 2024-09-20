@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="game-title">
+            <h2>Guess the Number</h2>
+        </div>
+
+        <div class="game-instructions">
+            <div class="name-container">
+                <label for="player-name" style="width: 150px;">Player Name: </label>
+                <input type="text" class="player-name">
+            </div>
+            <hr>
+            <div class="instructions-container">
+                <h4>Instructions: </h4>
+                <ol>
+                    <li>Guess the number between 1 and 40.</li>
+                    <li>You have 6 chances to guess the correct number.</li>
+                    <li>Click a button to guess the number.</li>
+                    <li>If the button number is greater than the generated number, it turns red.</li>
+                    <li>If the button number is less than the generated number, it turns yellow.</li>
+                    <li>If you guess correctly, it turns green and the game stops.</li>
+                </ol>
+            </div>
+            <hr class="bottom-hr">
+            <div class="game-buttons">
+                <button class="quit-game">Quit</button>
+                <button class="start-game" onclick="startGame()">Play</button>
+            </div>
+        </div>
+
+        <div class="game-interface"></div>
+
+        <div class="result-container hidden">
+            <p id="result-message"></p>
+            <div class="game-buttons">
+                <button class="play-again hidden" onclick="startGame()">Play Again</button>
+                <button class="home-button hidden" onclick="goHome()">Home</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

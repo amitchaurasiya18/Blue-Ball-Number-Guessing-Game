@@ -1,0 +1,221 @@
+.hidden {
+  display: none;
+}
+
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.container{
+    width: 500px;
+    padding: 20px 20px 0 20px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.459);
+    background: rgba(66, 101, 255, 0.438);
+}
+
+h4 {
+    display: block;
+    margin-block-start: 0.33em;
+    margin-block-end: 0.33em;
+}
+
+.game-title{
+    text-align: center;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.459); 
+    padding: 1px;
+    border-radius: 20px;
+    margin: 0 0 20px 0;
+    background: blue;
+    color: white;
+}
+
+.game-instructions{
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.459); 
+    margin: 0;
+    padding: 20px;
+    border-radius: 20px;
+    background: blue;
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.name-container{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.name-container > input{
+    font-size: 18px;
+    /* border: none; */
+    border-radius: 7px;
+    margin-left: 15px;
+    outline: none;
+    padding: 7px;
+    width: calc(100% - 150px);
+}
+
+.instructions-container{
+    padding: 5px;
+    margin-top: 0;
+    /* margin-bottom: 15px; */
+}
+
+.game-buttons{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    /* margin-top: 20px; */
+}
+
+.game-buttons > button.start-game{
+   background: green;
+   color: white;
+   outline: none;
+   border: none;
+   cursor: pointer;
+   padding: 5px 10px 5px 10px;
+   font-size: 18px;
+   border-radius: 10px;
+   font-weight: bold;
+}
+
+.game-buttons > button.quit-game{
+    background: red;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+ }
+
+ .game-interface{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    /* margin-top: 25px; */
+    margin-bottom: 25px;
+ }
+
+ .game-interface > button{
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px;
+    width: calc(100% - 450px);
+    border-radius: 50%;
+    cursor: pointer;
+ }
+
+
+ .result-container{
+    /* border: 1px solid red; */
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.459);
+    background: blue;
+    color: white;
+ }
+
+ .result-container > p {
+    display: block;
+    margin-block-start: 0;
+ }
+
+ #result-message{
+    font-weight: bold;
+    font-size: large;
+ }
+
+ p {
+    display: block;
+    /* margin-block-start: 0.1em; */
+    margin-block-end: 0;
+ }
+
+ p#result-message{
+    margin-block-end: 1em;
+ }
+ .result-container > .game-buttons > button.play-again{
+    /* background: #000;
+    color: white; */
+    background: white;
+    color: blue;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    font-size: 18px;
+    border-radius: 8px;
+ }
+
+ .bottom-hr{
+    margin-bottom: 10px;
+    margin-block-end: 1.3em;
+ }
+
+ .result-container > .game-buttons > button.home-button{
+    background: white;
+    color: blue;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    font-size: 18px;
+    border-radius: 8px;
+ }
+
+
+button {
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+
+.game-buttons > button.start-game:hover{
+    background-color: white;
+    color: green;
+    font-weight: bold;
+}
+
+.game-buttons > button.quit-game:hover{
+    background-color: white;
+    color: red;
+    font-weight: bold;
+}
+.result-container > .game-buttons > button.play-again:hover,
+.result-container > .game-buttons > button.home-button:hover {
+    background-color: blue;
+    color: white;
+}
+
+.game-buttons > button.start-game:hover,
+.result-container > .game-buttons > button.play-again:hover,
+.game-buttons > button.quit-game:hover,
+.result-container > .game-buttons > button.home-button:hover {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.game-interface > button {
+    transition: transform 0.2s ease;
+}
+
+.game-interface > button:hover {
+    transform: scale(1.1);
+}
+
+
